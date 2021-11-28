@@ -180,7 +180,7 @@ public class Bank {
 	/**
 	 * A time unit passes in the system
 	 */
-	public void tick() throws AccountDoesNotExistException {
+	public void tick() {
 		for (Account account : accountlist.values()) {
 			account.tick();
 		}
